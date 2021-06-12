@@ -16,4 +16,6 @@ In order to test the success of our algorithm, the same analysis was performed u
 
 ## Step 4: Comparing the results
 The developed algorithm found 142,685 (2.9% of all variants) *de novo* variants in the child genome, while the RTG Tools *vcfeval* found 83,438 (1.7%). The significant diference in the results can be attributed to the fact that *vcfeval* uses an advanced algorithm that is able to detect different representations of the same variant, ie. it is not comparing the VCF files simply line by line, like our developed algorithm does. 
+
+
 For a detailed overview of the project you can view the project presentation available [here](url).
