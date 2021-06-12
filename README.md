@@ -12,9 +12,9 @@ The algorithm was implemented as a part of a Jupyter Notebook using Python versi
 The main function compares 2 VCF files and returns a new VCF file containing all variants present in the child VCF (ie. called variants) and not present in a parent VCF (ie. baseline variants). These results are then used as the called variants in the second usage of the function to be compared to the other parent's VCF.
 
 ## Step 3: Finding *de novo* variants using RTG Tools *vcfeval* 
-
+In order to test the success of our algorithm, the same analysis was performed using a state of the art tool. RTG Tools *vcfeval* analysis was run on the CGC platform, using the same 2-step comparison as with the developed algorithm.  
 
 ## Step 4: Comparing the results
-
+The developed algorithm found ???? *de novo* variants in the child genome, while the RTG Tools *vcfeval* found ????. The significant diference in the results can be attributed to the fact that *vcfeval* uses an advanced algorithm that is able to detect different representations of the same variant, ie. it is not comparing the VCF files simply line by line, like our developed algorithm does. 
 
 For a detailed overview of the project you can view the project presentation available [here](url).
